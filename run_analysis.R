@@ -1,6 +1,5 @@
 library(data.table)
 library(dplyr)
-#library(utils)
 
 DATA_DIR <- './data'
 RAW_DATA_ARCHIVE <- file.path(DATA_DIR, 'samsung_raw.zip')
