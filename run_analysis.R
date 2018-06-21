@@ -92,4 +92,4 @@ names(data) <- gsub("(Mean|Std)(X|Y|Z)", "\\2\\1", names(data), fixed=FALSE)
 tidy_data <- {data %>% group_by(subject, activity) %>% summarise_all(funs(mean))}
 
 # Save the tidy data set
-write.table(tidy_data, './tidy_data.txt', row.name=FALSE)
+write.table(tidy_data, './tidy_data.txt', row.names=FALSE)
